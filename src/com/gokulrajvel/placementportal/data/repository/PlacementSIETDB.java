@@ -142,14 +142,6 @@ public class PlacementSIETDB {
         c2.setCompany_phone("08044445555");
         c2.setCompany_website("https://www.tcs.com");
         COMPANIES.add(c2);
-
-        TeacherSignup teacher = new TeacherSignup();
-        teacher.setTeacherId("SIET-T001");
-        teacher.setEmail("placement@siet.edu");
-        teacher.setPassword("siet1234");
-        teacher.setPhoneNo("9876543210");
-        teacher.setBirthDate(new Date());
-        TEACHERS.put(normalize(teacher.getEmail()), teacher);
     }
 
     private static String normalize(String value) {
