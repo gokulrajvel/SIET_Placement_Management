@@ -1,93 +1,93 @@
 package com.gokulrajvel.placementportal.data.dto;
 
-import java.util.Date;
 
 public class StudentSignup {
-    private String registerNo;
-    private String name;
-    private String email;
-    private String password;
-    private String contactNo;
-    private String[] skill;
-    private String batch;
-    private Date birthDate;
-    private placeMentStatus placementStatus = placeMentStatus.NOT_PLACED;
-    public enum placeMentStatus {
-        PLACED, NOT_PLACED;
-    }
+  private String registerNo;
+  private String name;
+  private String email;
+  private String password;
+  private String contactNo;
+  private String[] skill;
+  private String batch;
+  private String birthDate;
+  private PlacementStatus placementStatus = PlacementStatus.NOT_PLACED;
 
-    public StudentSignup() {
-    }
+  public enum PlacementStatus {
+    PLACED,
+    NOT_PLACED;
+  }
 
-    public String getRegisterNo() {
-        return registerNo;
-    }
+  public StudentSignup() {}
 
-    public void setRegisterNo(String registerNo) {
-        this.registerNo = registerNo;
-    }
+  public String getRegisterNo() {
+    return registerNo;
+  }
 
-    public void settName(String name) {
-        this.name = name;
-    }
+  public void setRegisterNo(String registerNo) {
+    this.registerNo = registerNo;
+  }
 
-    public String getName() {
-        return name;
-    }
+  public void setName(String name) {
+    this.name = name;
+  }
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
+  public String getName() {
+    return name;
+  }
 
-    public String getEmail() {
-        return email;
-    }
+  public void setEmail(String email) {
+    this.email = email;
+  }
 
-    public void setPassword(String password) {
-        this.password = password;
-    }
+  public String getEmail() {
+    return email;
+  }
 
-    public String getPassword() {
-        return password;
-    }
+  public void setPassword(String password) {
+    this.password = password;
+  }
 
-    public void setContactNo(String contactNo) {
-        this.contactNo = contactNo;
-    }
+  public String getPassword() {
+    return password;
+  }
 
-    public String getContactNo() {
-        return contactNo;
-    }
+  public void setContactNo(String contactNo) {
+    this.contactNo = contactNo;
+  }
 
-    public void setSkill(String[] skill) {
-        this.skill = skill;
-    }
+  public String getContactNo() {
+    return contactNo;
+  }
 
-    public String[] getSkill() {
-        return skill;
-    }
+  public void setSkill(String[] skill) {
+    this.skill = skill;
+  }
 
-    public void setBatch(String batch) {
-        this.batch = batch;
-    }
+  public String[] getSkill() {
+    return skill;
+  }
 
-    public String getBatch() {
-        return batch;
-    }
+  public void setBatch(String batch) {
+    this.batch = batch;
+  }
 
-    public Date getBirthDate() {
-        return birthDate;
-    }
+  public String getBatch() {
+    return batch;
+  }
 
-    public void setBirthDate(Date birthDate) {
-        this.birthDate = birthDate;
-    }
+  public String getBirthDate() {
+    return birthDate;
+  }
 
-    public placeMentStatus getPlacementStatus() {
-        return placementStatus;
-    }
+  public void setBirthDate(String birthDate) {
+    this.birthDate = birthDate;
+  }
 
-    public void setPlacementStatus(placeMentStatus placementStatus) {
-        this.placementStatus = placementStatus;
-    }
+  public PlacementStatus getPlacementStatus() {
+    return placementStatus;
+  }
+
+  public void setPlacementStatus(PlacementStatus placementStatus) {
+    this.placementStatus = placementStatus;
+  }
 }

@@ -1,63 +1,60 @@
 package com.gokulrajvel.placementportal.data.dto;
 
 public class CompanyDetails {
-        private int company_id;
-        private String company_name;
-        private String company_address;
-        private String company_email;
-        private String company_phone;
-        private String company_website;
+  private int companyId;
+  private String companyName;
+  private String companyAddress;
+  private String companyEmail;
+  private String companyPhone;
+  private String companyWebsite;
 
-        public CompanyDetails() {
+  public CompanyDetails() {}
 
-        }
+  public int getCompanyId() {
+    return companyId;
+  }
 
-        public int getCompany_id() {
-            return company_id;
-        }
+  public void setCompanyId(int companyId) {
+    this.companyId = companyId;
+  }
 
-        public void setCompany_id(int company_id) {
-            this.company_id = company_id;
-        }
+  public String getCompanyName() {
+    return companyName;
+  }
 
-        public String getCompany_name() {
-            return company_name;
-        }
+  public void setCompanyName(String companyName) {
+    this.companyName = companyName;
+  }
 
-        public void setCompany_name(String company_name) {
-            this.company_name = company_name;
-        }
+  public String getCompanyAddress() {
+    return companyAddress;
+  }
 
-        public String getCompany_address() {
-            return company_address;
-        }
+  public void setCompanyAddress(String companyAddress) {
+    this.companyAddress = companyAddress;
+  }
 
-        public void setCompany_address(String company_address) {
-            this.company_address = company_address;
-        }
+  public String getCompanyEmail() {
+    return companyEmail;
+  }
 
-        public String getCompany_email() {
-            return company_email;
-        }
+  public void setCompanyEmail(String companyEmail) {
+    this.companyEmail = companyEmail;
+  }
 
-        public void setCompany_email(String company_email) {
-            this.company_email = company_email;
-        }
+  public String getCompanyPhone() {
+    return companyPhone;
+  }
 
-        public String getCompany_phone() {
-            return company_phone;
-        }
+  public void setCompanyPhone(String companyPhone) {
+    this.companyPhone = companyPhone;
+  }
 
-        public void setCompany_phone(String company_phone) {
-            this.company_phone = company_phone;
-        }
+  public String getCompanyWebsite() {
+    return companyWebsite;
+  }
 
-        public String getCompany_website() {
-            return company_website;
-        }
-
-        public void setCompany_website(String company_website) {
-            this.company_website = company_website;
-        }
-
+  public void setCompanyWebsite(String companyWebsite) {
+    this.companyWebsite = companyWebsite;
+  }
 }

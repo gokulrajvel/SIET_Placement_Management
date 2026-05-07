@@ -4,26 +4,27 @@ import com.gokulrajvel.placementportal.data.dto.LoginRequest;
 import com.gokulrajvel.placementportal.data.dto.StudentSignup;
 
 public class StudentSignInPresenter {
-    private final StudentSignInView studentSignInView;
-    private final StudentSignInModel studentSignInModel;
+  private final StudentSignInView studentSignInView;
+  private final StudentSignInModel studentSignInModel;
 
-    public StudentSignInPresenter(StudentSignInView studentSignInView) {
-        this.studentSignInView = studentSignInView;
-        this.studentSignInModel = new StudentSignInModel(this);
-    }
-    void authenticate(LoginRequest loginRequest) {
-        studentSignInModel.authenticate(loginRequest);
-    }
+  public StudentSignInPresenter(StudentSignInView studentSignInView) {
+    this.studentSignInView = studentSignInView;
+    this.studentSignInModel = new StudentSignInModel(this);
+  }
 
-    void onSignInSuccessful(StudentSignup studentSignup) {
-        studentSignInView.onSignInSuccessful(studentSignup);
-    }
+  void authenticate(LoginRequest loginRequest) {
+    studentSignInModel.authenticate(loginRequest);
+  }
 
-    void onSignInFailed(String message) {
-        studentSignInView.onSignInFailed(message);
-    }
+  void onSignInSuccessful(StudentSignup studentSignup) {
+    studentSignInView.onSignInSuccessful(studentSignup);
+  }
 
-    void displayError(String message) {
-        studentSignInView.displayError(message);
-    }
+  void onSignInFailed(String message) {
+    studentSignInView.onSignInFailed(message);
+  }
+
+  void displayError(String message) {
+    studentSignInView.displayError(message);
+  }
 }
