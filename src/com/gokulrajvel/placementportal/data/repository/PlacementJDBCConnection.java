@@ -6,7 +6,7 @@ import java.sql.DriverManager;
 public class PlacementJDBCConnection {
   private static final String URL = "jdbc:mysql://localhost:3306/placementDB";
   private static final String USER = "root";
-  private static final String PASSWORD = "mrdio2";
+  private static final String PASSWORD = "<use you password>";
 
   public static Connection getConnection() {
     try {
